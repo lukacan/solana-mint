@@ -11,4 +11,7 @@ pub mod solana_mint {
     pub fn create_nft(ctx: Context<CreateNftcontext>) -> Result<()> {
         instructions::create_nft(ctx)
     }
+    pub fn print_new_nft(ctx: Context<PrinNewNFTContext>) -> Result<()> {
+        instructions::prinNewNft(ctx)
+    }
 }
